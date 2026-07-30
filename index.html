@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <style>
+      :root {
+        --bg: #282828;
+        --bg1: #505050;
+        --fg: #ebdbb2;
+        --fg3: #a89984;
+        --fg4: #928374;
+        --yellow: #fabd2f;
+        --blue: #83a598;
+      }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: "Space Mono", monospace, sans-serif;
+      }
+      .custom-link {
+        color: var(--fg4);
+        text-decoration-line: underline;
+        text-decoration-color: var(--fg4);
+        transition: 200ms ease-in-out;
+      }
+      .custom-link:hover {
+        color: var(--blue);
+        text-decoration-color: var(--blue);
+      }
+      .custom-list {
+        list-style: circle;
+      }
+      h1 {
+        font-family:
+          "JetBrains Mono", "Space Grotesk", "JetBrainsMono Nerd Font";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <header class="text-center py-3">
+        <ul
+          class="list-unstyled d-flex justify-content-center gap-3 flex-wrap m-0 p-0"
+        >
+          <li><a href="#about" class="custom-link fs-5">about</a></li>
+          <li><a href="#projects" class="custom-link fs-5">projects</a></li>
+          <li><a href="#contact" class="custom-link fs-5">contact</a></li>
+        </ul>
+      </header>
+
+      <div class="row justify-content-center align-items-center my-5">
+        <div class="col-auto d-flex align-items-center gap-5">
+          <img
+            src="./assets/pfp.jpg"
+            alt="Profile"
+            class="rounded-circle p-1"
+            style="width: 25vw; max-width: 200px; border: 3px solid var(--bg1)"
+          />
+          <div class="text-center text-md-start">
+            <h1
+              title="Akbar Ahmedjonov Otabekovich"
+              class="text-warning"
+              style="font-size: 3.5rem"
+            >
+              AKBAR
+            </h1>
+            <ul class="custom-list list-unstyled fs-5">
+              <li>Frontend Developer</li>
+              <li>
+                Based in
+                <a
+                  href="https://maps.app.goo.gl/TcxTsq1mnaz1UPr9A"
+                  style="
+                    text-decoration: underline;
+                    color: var(--blue);
+                    text-decoration-color: var(--blue);
+                  "
+                  >Jizzakh, Uzbekistan</a
+                >
+              </li>
+              <li id="age"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center my-4">
+        <div
+          class="col-auto d-flex flex-wrap justify-content-between align-items-center"
+          style="width: inherit"
+        >
+          <a
+            href="https://drive.google.com/file/d/1aFRL6q-MRZZmAO0OPiz74Cm6yCph2dUv/view?usp=sharing"
+            class="btn btn-outline-light me-3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ph ph-file-pdf"></i> Resume
+          </a>
+          <div class="d-flex gap-3">
+            <a
+              href="https://github.com/akbarahmedjonov"
+              class="btn btn-outline-light rounded-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ph ph-github-logo"></i>
+            </a>
+            <a
+              href="https://t.me/@akbar_ahmedjonov"
+              class="btn btn-outline-light rounded-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ph ph-telegram-logo"></i>
+            </a>
+            <a
+              href="mailto:akbarahmedjonovdev@gmail.com"
+              class="btn btn-outline-light rounded-circle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="ph ph-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section id="projects" class="my-5 py-5">
+        <div class="container">
+          <h2
+            class="text-center mb-5"
+            style="font-family: &quot;Space Grotesk&quot;; font-size: 2.5rem"
+          >
+            Projects
+          </h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+              <div
+                class="card h-100"
+                style="background: #1a1a1a; border: 1px solid #333"
+              >
+                <div
+                  class="card-body p-0 overflow-hidden"
+                  style="border-radius: 8px"
+                >
+                  <img
+                    src="./assets/void-tab.png"
+                    class="w-100"
+                    alt="Void Tab Screenshot"
+                    style="height: 200px; object-fit: cover"
+                  />
+                  <div class="p-4">
+                    <h3
+                      class="card-title text-center mb-3"
+                      style="
+                        font-family: &quot;Space Grotesk&quot;;
+                        font-size: 1.5rem;
+                        color: var(--fg);
+                      "
+                    >
+                      Void Tab
+                    </h3>
+                    <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
+                      <span class="badge" style="background: #2a2a2a; color: #e34f26;"><i class="ph ph-html5-logo"></i> HTML</span>
+                      <span class="badge" style="background: #2a2a2a; color: #1572b6;"><i class="ph ph-css3-logo"></i> CSS</span>
+                      <span class="badge" style="background: #2a2a2a; color: #f7df1e;"><i class="ph ph-js-logo"></i> JS</span>
+                      <span class="badge" style="background: #2a2a2a; color: var(--fg);"><i class="ph ph-cloud"></i> Weather API</span>
+                      <span class="badge" style="background: #2a2a2a; color: var(--fg);"><i class="ph ph-database"></i> LocalStorage</span>
+                    </div>
+                    <p
+                      class="card-text text-center mb-4"
+                      style="color: var(--fg3)"
+                    >
+                      A minimalist new tab extension for Firefox that provides a
+                      clean, distraction-free starting page.
+                    </p>
+                    <div class="d-flex justify-content-center gap-2">
+                      <a
+                        href="https://github.com/akbarahmedjonov/void-tab"
+                        class="btn btn-outline-light btn-sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="ph ph-github-logo"></i> Code
+                      </a>
+                      <a
+                        href="https://addons.mozilla.org/en-US/firefox/addon/void-tab/"
+                        class="btn btn-outline-light btn-sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="ph ph-download-simple"></i> Install
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card h-100"
+                style="background: #1a1a1a; border: 1px solid #333"
+              >
+                <div
+                  class="card-body p-0 overflow-hidden"
+                  style="border-radius: 8px"
+                >
+                  <img
+                    src="./assets/bir-qadam.png"
+                    class="w-100"
+                    alt="Bir Qadam Screenshot"
+                    style="height: 200px; object-fit: cover"
+                  />
+                  <div class="p-4">
+                    <h3
+                      class="card-title text-center mb-3"
+                      style="
+                        font-family: &quot;Space Grotesk&quot;;
+                        font-size: 1.5rem;
+                        color: var(--fg);
+                      "
+                    >
+                      Bir Qadam
+                    </h3>
+                    <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
+                      <span class="badge" style="background: #2a2a2a; color: #000;"><i class="ph ph-triangle"></i> Vercel</span>
+                      <span class="badge" style="background: #2a2a2a; color: #646cff;"><i class="ph ph-vite-logo"></i> Vite</span>
+                      <span class="badge" style="background: #2a2a2a; color: #61dafb;"><i class="ph ph-react-logo"></i> React</span>
+                      <span class="badge" style="background: #2a2a2a; color: #3178c6;"><i class="ph ph-file-ts"></i> TypeScript</span>
+                      <span class="badge" style="background: #2a2a2a; color: #ffca28;"><i class="ph ph-flame"></i> Firebase</span>
+                    </div>
+                    <p
+                      class="card-text text-center mb-4"
+                      style="color: var(--fg3)"
+                    >
+                      A step-by-step learning platform designed to help users
+                      master new skills through structured courses.
+                    </p>
+                    <div class="d-flex justify-content-center gap-2">
+                      <a
+                        href="https://bir-qadam.vercel.app"
+                        class="btn btn-outline-light btn-sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="ph ph-globe"></i> Live Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div
+                class="card h-100"
+                style="background: #1a1a1a; border: 1px solid #333"
+              >
+                <div
+                  class="card-body p-0 overflow-hidden"
+                  style="border-radius: 8px"
+                >
+                  <img
+                    src="./assets/devkit0.png"
+                    class="w-100"
+                    alt="DevKit0 Screenshot"
+                    style="height: 200px; object-fit: cover"
+                  />
+                  <div class="p-4">
+                    <h3
+                      class="card-title text-center mb-3"
+                      style="
+                        font-family: &quot;Space Grotesk&quot;;
+                        font-size: 1.5rem;
+                        color: var(--fg);
+                      "
+                    >
+                      DevKit0
+                    </h3>
+                    <div class="d-flex flex-wrap justify-content-center gap-1 mb-3">
+                      <span class="badge" style="background: #2a2a2a; color: #61dafb;"><i class="ph ph-react-logo"></i> React</span>
+                      <span class="badge" style="background: #2a2a2a; color: #3178c6;"><i class="ph ph-file-ts"></i> TypeScript</span>
+                      <span class="badge" style="background: #2a2a2a; color: #646cff;"><i class="ph ph-vite-logo"></i> Vite</span>
+                      <span class="badge" style="background: #2a2a2a; color: #000;"><i class="ph ph-triangle"></i> Vercel</span>
+                    </div>
+                    <p
+                      class="card-text text-center mb-4"
+                      style="color: var(--fg3)"
+                    >
+                      A developer toolkit application that provides essential
+                      utilities and resources for web developers.
+                    </p>
+                    <div class="d-flex justify-content-center gap-2">
+                      <a
+                        href="https://devkit0.vercel.app"
+                        class="btn btn-outline-light btn-sm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="ph ph-globe"></i> Live Demo
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.documentElement.style.scrollBehavior = "smooth";
+      let age = document.getElementById("age");
+      let year = new Date().getFullYear();
+      age.innerText = year - 2013 + " years old";
+    </script>
+  </body>
+</html>
