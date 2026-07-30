@@ -12,6 +12,7 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: "Space Mono", monospace, sans-serif;
+  overflow-x: hidden;
 }
 
 .custom-link {
@@ -37,6 +38,26 @@ h1 {
 .si {
   font-size: 0.9em;
   vertical-align: middle;
+}
+
+.custom-contact-btn {
+  border: 1px solid var(--fg);
+  color: var(--fg);
+  background-color: transparent;
+}
+
+.custom-contact-btn:hover {
+  background-color: var(--fg);
+  color: var(--bg);
+}
+
+.form-control.custom-contact-btn {
+  background-color: transparent;
+  color: var(--fg);
+}
+
+.form-control.custom-contact-btn::placeholder {
+  color: var(--fg3);
 }
 
 

@@ -48,85 +48,87 @@
         </ul>
       </header>
 
-      <div class="row justify-content-center align-items-center my-5">
-        <div class="col-auto d-flex align-items-center gap-5">
-          <img
-            src="./assets/pfp.jpg"
-            alt="Profile"
-            class="rounded-circle p-1"
-            style="width: 25vw; max-width: 200px; border: 3px solid var(--bg1)"
-          />
-          <div class="text-center text-md-start">
-            <h1
-              title="Akbar Ahmedjonov Otabekovich"
-              class="text-warning"
-              style="font-size: 3.5rem"
-            >
-              AKBAR
-            </h1>
-            <ul class="custom-list list-unstyled fs-5">
-              <li><i class="ph ph-laptop"></i> Frontend Developer</li>
-              <li>
-                <i class="ph ph-map-pin"></i> Based in
-                <a
-                  href="https://maps.app.goo.gl/TcxTsq1mnaz1UPr9A"
-                  style="
-                    text-decoration: underline;
-                    color: var(--blue);
-                    text-decoration-color: var(--blue);
-                  "
-                  >Jizzakh, Uzbekistan</a
-                >
-              </li>
-              <li id="age">
-                <i class="ph ph-calendar"></i> <span id="age-text"></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+       <section id="about">
+         <div class="row justify-content-center align-items-center my-5">
+           <div class="col-auto d-flex align-items-center gap-5">
+             <img
+               src="./assets/pfp.jpg"
+               alt="Profile"
+               class="rounded-circle p-1"
+               style="width: 25vw; max-width: 200px; border: 3px solid var(--bg1)"
+             />
+             <div class="text-center text-md-start">
+               <h1
+                 title="Akbar Ahmedjonov Otabekovich"
+                 class="text-warning"
+                 style="font-size: 3.5rem"
+               >
+                 AKBAR
+               </h1>
+               <ul class="custom-list list-unstyled fs-5">
+                 <li><i class="ph ph-laptop"></i> Frontend Developer</li>
+                 <li>
+                   <i class="ph ph-map-pin"></i> Based in
+                   <a
+                     href="https://maps.app.goo.gl/TcxTsq1mnaz1UPr9A"
+                     style="
+                       text-decoration: underline;
+                       color: var(--blue);
+                       text-decoration-color: var(--blue);
+                     "
+                     >Jizzakh, Uzbekistan</a
+                   >
+                 </li>
+                 <li id="age">
+                   <i class="ph ph-calendar"></i> <span id="age-text"></span>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
 
-      <div class="row justify-content-center my-4">
-        <div
-          class="col-auto d-flex flex-wrap justify-content-between align-items-center"
-          style="width: inherit"
-        >
-          <a
-            href="https://drive.google.com/file/d/1aFRL6q-MRZZmAO0OPiz74Cm6yCph2dUv/view?usp=sharing"
-            class="btn btn-outline-light me-3"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="ph ph-file-pdf"></i> Resume
-          </a>
-          <div class="d-flex gap-3">
-            <a
-              href="https://github.com/akbarahmedjonov"
-              class="btn btn-outline-light rounded-circle"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="ph ph-github-logo"></i>
-            </a>
-            <a
-              href="https://t.me/@akbar_ahmedjonov"
-              class="btn btn-outline-light rounded-circle"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="ph ph-telegram-logo"></i>
-            </a>
-            <a
-              href="mailto:akbarahmedjonovdev@gmail.com"
-              class="btn btn-outline-light rounded-circle"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="ph ph-envelope"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+         <div class="row justify-content-center my-4">
+           <div
+             class="col-auto d-flex flex-wrap justify-content-between align-items-center"
+             style="width: inherit"
+           >
+             <a
+               href="https://drive.google.com/file/d/1aFRL6q-MRZZmAO0OPiz74Cm6yCph2dUv/view?usp=sharing"
+               class="btn btn-outline-light me-3"
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <i class="ph ph-file-pdf"></i> Resume
+             </a>
+             <div class="d-flex gap-3">
+               <a
+                 href="https://github.com/akbarahmedjonov"
+                 class="btn btn-outline-light rounded-circle"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <i class="ph ph-github-logo"></i>
+               </a>
+               <a
+                 href="https://t.me/@akbar_ahmedjonov"
+                 class="btn btn-outline-light rounded-circle"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <i class="ph ph-telegram-logo"></i>
+               </a>
+               <a
+                 href="mailto:akbarahmedjonovdev@gmail.com"
+                 class="btn btn-outline-light rounded-circle"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <i class="ph ph-envelope"></i>
+               </a>
+             </div>
+           </div>
+         </div>
+       </section>
 
       <section id="projects" class="my-5 py-5">
         <div class="container">
@@ -381,39 +383,80 @@
           >
             Contact
           </h2>
-          <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a
-              href="https://github.com/akbarahmedjonov"
-              class="btn btn-outline-light"
-              target="_blank"
-              rel="noopener noreferrer"
+          <div class="row justify-content-center gx-2">
+            <div
+              class="col-md-6 col-lg-4 d-flex flex-column align-items-center gap-5"
             >
-              <i class="ph ph-github-logo"></i> GitHub
-            </a>
-            <a
-              href="https://t.me/@akbar_ahmedjonov"
-              class="btn btn-outline-light"
-              target="_blank"
-              rel="noopener noreferrer"
+              <form
+                action="https://formspree.io/f/mlgqvkqr"
+                method="POST"
+                class="w-100 d-flex flex-column align-items-center gap-3"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="form-control custom-contact-btn"
+                  style="width: 100%; max-width: 300px"
+                  required
+                />
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  class="form-control custom-contact-btn"
+                  style="width: 100%; max-width: 300px"
+                  rows="3"
+                  required
+                ></textarea>
+                <button
+                  type="submit"
+                  class="btn custom-contact-btn"
+                  style="width: 100%; max-width: 300px"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+            <div
+              class="col-md-6 col-lg-4 d-flex flex-column align-items-center gap-3"
             >
-              <i class="ph ph-telegram-logo"></i> Telegram
-            </a>
-            <a
-              href="mailto:akbarahmedjonovdev@gmail.com"
-              class="btn btn-outline-light"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="ph ph-envelope"></i> Email
-            </a>
-            <a
-              href="https://youtube.com/@akbarthedev"
-              class="btn btn-outline-light"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="ph ph-youtube-logo"></i> YouTube
-            </a>
+              <a
+                href="https://github.com/akbarahmedjonov"
+                class="btn d-flex align-items-center gap-2 custom-contact-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="width: 100%; max-width: 300px"
+              >
+                <i class="ph ph-github-logo"></i> GitHub
+              </a>
+              <a
+                href="https://t.me/@akbar_ahmedjonov"
+                class="btn d-flex align-items-center gap-2 custom-contact-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="width: 100%; max-width: 300px"
+              >
+                <i class="ph ph-telegram-logo"></i> Telegram
+              </a>
+              <a
+                href="mailto:akbarahmedjonovdev@gmail.com"
+                class="btn d-flex align-items-center gap-2 custom-contact-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="width: 100%; max-width: 300px"
+              >
+                <i class="ph ph-envelope"></i> Email
+              </a>
+              <a
+                href="https://youtube.com/@akbarthedev"
+                class="btn d-flex align-items-center gap-2 custom-contact-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="width: 100%; max-width: 300px"
+              >
+                <i class="ph ph-youtube-logo"></i> YouTube
+              </a>
+            </div>
           </div>
         </div>
       </section>
