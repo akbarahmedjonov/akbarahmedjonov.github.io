@@ -1,0 +1,42 @@
+:root {
+  --bg: #282828;
+  --bg1: #505050;
+  --fg: #ebdbb2;
+  --fg3: #a89984;
+  --fg4: #928374;
+  --yellow: #fabd2f;
+  --blue: #83a598;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Space Mono", monospace, sans-serif;
+}
+
+.custom-link {
+  color: var(--fg4);
+  text-decoration-line: underline;
+  text-decoration-color: var(--fg4);
+  transition: 200ms ease-in-out;
+}
+
+.custom-link:hover {
+  color: var(--blue);
+  text-decoration-color: var(--blue);
+}
+
+.custom-list {
+  list-style: circle;
+}
+
+h1 {
+  font-family: "JetBrains Mono", "Space Grotesk", "JetBrainsMono Nerd Font";
+}
+
+.si {
+  font-size: 0.9em;
+  vertical-align: middle;
+}
+
+
